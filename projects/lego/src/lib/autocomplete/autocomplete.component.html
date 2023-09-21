@@ -1,0 +1,24 @@
+<label *ngIf="label" for="autocomplete">{{ label }}</label>
+<input
+  type="text"
+  #addressInput
+  [placeholder]="placeholder"
+  [formControl]="control"
+  [matAutocomplete]="auto"
+  id="autocomplete"
+  role="combobox"
+  aria-autocomplete="list"
+/>
+
+<mat-autocomplete
+  #auto="matAutocomplete"
+  (optionSelected)="setOptionValue($event.option.value)"
+>
+  <mat-option
+    *ngFor="let option of filteredOptions | async"
+    [value]="option"
+    role="option"
+  >
+    {{ option }}
+  </mat-option>
+</mat-autocomplete>

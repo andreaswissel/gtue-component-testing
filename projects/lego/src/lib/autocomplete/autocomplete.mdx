@@ -1,0 +1,38 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/blocks";
+import * as AutocompleteStories from "./autocomplete.stories";
+
+# Autocomplete Component
+
+[Source code](https://github.com/andreaswissel/cypress-storybook-testing-talk/tree/main/projects/lego/src/components/autocomplete)
+&nbsp;|&nbsp;
+[Figma reference](https://github.com/andreaswissel/cypress-storybook-testing-talk/tree/main/src/components/autocomplete)
+&nbsp;|&nbsp;
+[Usage guidelines](#usage-guidelines)
+
+<Meta of={AutocompleteStories} name="Overview" />
+
+<Canvas>
+  <Story of={AutocompleteStories.Default} />
+</Canvas>
+
+## Getting started
+
+You can implement the autocomplete component by importing the `AutocompleteComponent` into your NgModule.
+
+```ts
+import { AutocompleteComponent } from "@lego/dropdown";
+```
+
+The autocomplete has to two required attributes: `placeholder` and `options`. The `options` specify
+the items that are shown in the dropdown list in an array syntax.
+The `label` is the optional text that is shown above the input.
+
+The autocomplete component will emit an `onOptionSet` event whenever a value is selected.
+
+```ts
+const options = ["Steak sandwhich", "BBQ ribs", "Hamburger", "French fries"];
+```
+
+## Component API
+
+<ArgsTable />

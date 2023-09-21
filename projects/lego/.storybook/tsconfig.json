@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.lib.json",
+  "compilerOptions": {
+    "types": ["node", "google.maps"],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["../src/test.ts", "../src/**/*.spec.ts", "../src/**/*.cy.ts"],
+  "include": ["../src/**/*", "./preview.ts"],
+  "files": ["./typings.d.ts"]
+}

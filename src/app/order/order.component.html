@@ -1,0 +1,8 @@
+<h1>Complete your order</h1>
+<lego-checkout-form></lego-checkout-form>
+<lego-button
+  [label]="'Order'"
+  (click)="submitForm()"
+  data-cy="order-button"
+></lego-button>
+<div class="is-loading" *ngIf="isLoading">Loading..</div>

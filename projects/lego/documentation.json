@@ -1,0 +1,2126 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "projects/lego/src/stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "AclService",
+            "id": "injectable-AclService-f449a37e3fd6eef502dd1feb9a94c36b864463564a067c4c2eaead9e4e03b3e237daaabd05f35f365a90a70083143c20fbec5a75bc75b3c9ab43f1198bd69256",
+            "file": "projects/lego/src/lib/acl.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class AclService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "AuthService",
+            "id": "injectable-AuthService-7f2f35b107bc1e7d8918a9c2437f757ddd76af087d87a2de990cf1606f432699d0f05493cf1bb6e5b764201a5f35f0a432a3ed1c88ae9d4ea5e1f00b10dcf7b8",
+            "file": "projects/lego/src/lib/auth.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class AuthService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "DataAccessService",
+            "id": "injectable-DataAccessService-8dad31c81892c73c67cb5fc2efdd1b03067912ae7f44c727066a1bf6a6d846943d6f6c7f432ce2bf5fcec78335ffba674fa905faf0e76eea2aed18e7c8d74b93",
+            "file": "projects/lego/src/lib/data-access.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class DataAccessService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AddressAutocompleteComponent",
+            "id": "component-AddressAutocompleteComponent-5b29e101b9211f1c436f5cd9a959578a0edcaf1dde2ea61f9dfe4da2b58f1f1d28fbe96ddff5a59a35a633d39ecc771ad32cbb324ffedfe625c26c3d5c831460",
+            "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lego-address-autocomplete",
+            "styleUrls": [
+                "./address-autocomplete.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./address-autocomplete.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "address",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 31,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "adressTypes",
+                    "defaultValue": "[\n    AddressType.ESTABLISHMENT,\n    AddressType.GEOCODE,\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 33,
+                    "type": "AddressType[]",
+                    "decorators": []
+                },
+                {
+                    "name": "countryRestrictions",
+                    "defaultValue": "['US', 'DE']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "string[]",
+                    "decorators": []
+                },
+                {
+                    "required": true,
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 29,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "required": true,
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 30,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "setAddress",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 38,
+                    "type": "EventEmitter<MappedAddress>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "addressInput",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 39,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'addressInput', {static: true}"
+                        }
+                    ],
+                    "modifierKind": [
+                        167
+                    ]
+                },
+                {
+                    "name": "autocompleteInput",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 41
+                },
+                {
+                    "name": "mappedAddress",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "MappedAddress",
+                    "optional": true,
+                    "description": "",
+                    "line": 42
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 44,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "registerListener",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 49,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  Component,\n  EventEmitter,\n  Input,\n  Output,\n  ViewChild,\n} from '@angular/core';\nimport { FormsModule } from '@angular/forms';\n\nexport enum AddressType {\n  ESTABLISHMENT = 'establishment',\n  ADDRESS = 'address',\n  GEOCODE = 'geocode',\n}\n\nexport type MappedAddress = {\n  [key: string]: string;\n};\n\n@Component({\n  selector: 'lego-address-autocomplete',\n  templateUrl: './address-autocomplete.component.html',\n  styleUrls: ['./address-autocomplete.component.scss'],\n  standalone: true,\n  imports: [CommonModule, FormsModule],\n})\nexport class AddressAutocompleteComponent {\n  @Input({ required: true }) label!: string;\n  @Input({ required: true }) placeholder!: string;\n  @Input() address?: string;\n  @Input() countryRestrictions: string[] = ['US', 'DE'];\n  @Input() adressTypes: AddressType[] = [\n    AddressType.ESTABLISHMENT,\n    AddressType.GEOCODE,\n  ];\n\n  @Output() setAddress: EventEmitter<MappedAddress> = new EventEmitter();\n  @ViewChild('addressInput', { static: true }) addressInput: any;\n\n  autocompleteInput?: string;\n  mappedAddress?: MappedAddress;\n\n  ngOnInit() {\n    this.registerListener();\n    this.addressInput.nativeElement.value = this.address ? this.address : '';\n  }\n\n  registerListener() {\n    const autocomplete = new google.maps.places.Autocomplete(\n      this.addressInput.nativeElement,\n      {\n        componentRestrictions: { country: this.countryRestrictions },\n        types: this.adressTypes,\n        fields: ['address_components', 'geometry', 'icon', 'name'],\n      }\n    );\n    google.maps.event.addListener(autocomplete, 'place_changed', () => {\n      const place = autocomplete.getPlace();\n      this.addressText = place.address_components;\n      this.setAddress.emit(this.addressText);\n    });\n  }\n\n  set addressText(\n    addressComponents: google.maps.GeocoderAddressComponent[] | undefined\n  ) {\n    if (!!addressComponents) {\n      this.mappedAddress = addressComponents\n        .map((item: google.maps.GeocoderAddressComponent) => {\n          return { [item.types[0]]: item.long_name };\n        })\n        .reduce((prev, curr, currentIndex, {}) => {\n          return { ...prev, ...curr };\n        });\n    }\n  }\n\n  get addressText(): MappedAddress | undefined {\n    return this.mappedAddress;\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../styles/input\";\n\n:host {\n  display: flex;\n  flex-direction: column;\n  gap: 5px 0;\n}\n\nlabel {\n  font-size: 15px;\n  padding: 5px;\n}\n",
+                    "styleUrl": "./address-autocomplete.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "addressText": {
+                    "name": "addressText",
+                    "setSignature": {
+                        "name": "addressText",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "addressComponents",
+                                "type": "google.maps.GeocoderAddressComponent[] | undefined",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 65,
+                        "jsdoctags": [
+                            {
+                                "name": "addressComponents",
+                                "type": "google.maps.GeocoderAddressComponent[] | undefined",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "addressText",
+                        "type": "",
+                        "returnType": "MappedAddress | undefined",
+                        "line": 79
+                    }
+                }
+            },
+            "templateData": "<label for=\"address-autocomplete\">{{ label }}</label>\n<input\n  class=\"input\"\n  type=\"text\"\n  #addressInput\n  [placeholder]=\"placeholder\"\n  id=\"address-autocomplete\"\n/>\n"
+        },
+        {
+            "name": "AutocompleteComponent",
+            "id": "component-AutocompleteComponent-17af4a5130f019c3f9cfb187503b79aeac990f69253c9a1ec549d75a4b0ce08f7b42247208b294d32d60c2dae6075df3ab7b7e0832e3f09b1f74efa68982d85e",
+            "file": "projects/lego/src/lib/autocomplete/autocomplete.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-autocomplete",
+            "styleUrls": [
+                "./autocomplete.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./autocomplete.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "required": true,
+                    "name": "options",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 24,
+                    "type": "string[]",
+                    "decorators": []
+                },
+                {
+                    "required": true,
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 23,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onOptionSet",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "EventEmitter<string>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "control",
+                    "defaultValue": "new FormControl('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "filteredOptions",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<string[]>",
+                    "optional": true,
+                    "description": "",
+                    "line": 28
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "_filter",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string[]",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "_normalizeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 48,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "setOptionValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "MatAutocompleteModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ReactiveFormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "NgFor"
+                },
+                {
+                    "name": "NgIf"
+                },
+                {
+                    "name": "AsyncPipe",
+                    "type": "pipe"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { NgFor, AsyncPipe, NgIf } from '@angular/common';\nimport { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { MatAutocompleteModule } from '@angular/material/autocomplete';\nimport { Observable, startWith, map } from 'rxjs';\n\n@Component({\n  selector: 'lib-autocomplete',\n  templateUrl: './autocomplete.component.html',\n  styleUrls: ['./autocomplete.component.scss'],\n  standalone: true,\n  imports: [\n    FormsModule,\n    MatAutocompleteModule,\n    ReactiveFormsModule,\n    NgFor,\n    NgIf,\n    AsyncPipe,\n  ],\n})\nexport class AutocompleteComponent {\n  @Input() label?: string;\n  @Input({ required: true }) placeholder!: string;\n  @Input({ required: true }) options!: string[];\n  @Output() onOptionSet: EventEmitter<string> = new EventEmitter();\n\n  control = new FormControl('');\n  filteredOptions?: Observable<string[]>;\n\n  ngOnInit() {\n    this.filteredOptions = this.control.valueChanges.pipe(\n      startWith(''),\n      map((value) => this._filter(value || ''))\n    );\n  }\n\n  setOptionValue(value: string) {\n    this.onOptionSet.emit(value);\n  }\n\n  private _filter(value: string): string[] {\n    const filterValue = this._normalizeValue(value);\n    return this.options.filter((option) =>\n      this._normalizeValue(option).includes(filterValue)\n    );\n  }\n\n  private _normalizeValue(value: string): string {\n    return value.toLowerCase().replace(/\\s/g, '');\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "input {\n  width: 100%;\n\n  font-size: 15px;\n\n  border-radius: 5px;\n  padding: 12px 15px;\n  border: 1px solid #ccc;\n}\n\ninput:focus {\n  outline: none;\n  border-color: rgb(0 140 255);\n  box-shadow: 0 0 7px rgb(0 140 255 / 50%);\n}\n\n:host {\n  display: flex;\n  flex-direction: column;\n}\n",
+                    "styleUrl": "./autocomplete.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<label *ngIf=\"label\" for=\"autocomplete\">{{ label }}</label>\n<input\n  type=\"text\"\n  #addressInput\n  [placeholder]=\"placeholder\"\n  [formControl]=\"control\"\n  [matAutocomplete]=\"auto\"\n  id=\"autocomplete\"\n  role=\"combobox\"\n  aria-autocomplete=\"list\"\n/>\n\n<mat-autocomplete\n  #auto=\"matAutocomplete\"\n  (optionSelected)=\"setOptionValue($event.option.value)\"\n>\n  <mat-option\n    *ngFor=\"let option of filteredOptions | async\"\n    [value]=\"option\"\n    role=\"option\"\n  >\n    {{ option }}\n  </mat-option>\n</mat-autocomplete>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-a53fd738b978780d39fb5fcc9ae4cfe0088e57a1f6ce674862d57dab9192140bd1c05548a9910db0469a431142886e658ff2e761f15781b2ad430e58d64724d0",
+            "file": "projects/lego/src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 28,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 786,
+                            "end": 799,
+                            "flags": 8421376,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 330,
+                            "tagName": {
+                                "pos": 787,
+                                "end": 795,
+                                "flags": 8421376,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 42,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 22,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 34,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 48,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  imports: [CommonModule],\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 50
+                    }
+                }
+            }
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-23449b2bcc6d9f843329e38bd9e6ff804fe3a3c17a815dc902dbaf17dbefeb82105e504de53505665f21c9f2db9016108cf965a7acda295180ab83f358b14023-1",
+            "file": "projects/lego/src/lib/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lego-button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'lego-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  standalone: true,\n  imports: [CommonModule],\n})\nexport class ButtonComponent {\n  @Input({ required: true }) label!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "button {\n  display: flex;\n  align-items: center;\n  background-color: #1976d2;\n  color: white;\n  font-weight: 700;\n\n  border: none;\n  border-radius: 5px;\n  padding: 15px;\n}\n",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "ButtonComponent-1",
+            "templateData": "<button>{{ label }}</button>\n"
+        },
+        {
+            "name": "CheckoutFormComponent",
+            "id": "component-CheckoutFormComponent-2b9229a9ce3b74aa53b277c092d16c0267130a48c091c6e69dba99ca5e91e7feb4fd87e91335a5758e741ab21e5d8b14b630f31c391ad71dc333f067b891104b",
+            "file": "projects/lego/src/lib/checkout-form/checkout-form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lego-checkout-form",
+            "styleUrls": [
+                "./checkout-form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./checkout-form.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "checkoutForm",
+                    "defaultValue": "this.formBuilder.group({\n    firstname: [''],\n    lastname: [''],\n    email: [''],\n    address: this.formBuilder.group({\n      street: [''],\n      street_number: [''],\n      city: [''],\n      state: [''],\n      zip: [''],\n      country: [''],\n    }),\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "handleAddressChange",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "MappedAddress",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "MappedAddress",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "AddressAutocompleteComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ReactiveFormsModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component } from '@angular/core';\nimport {\n  AddressAutocompleteComponent,\n  MappedAddress,\n} from '../address-autocomplete/address-autocomplete.component';\nimport { FormBuilder, ReactiveFormsModule } from '@angular/forms';\n\n@Component({\n  selector: 'lego-checkout-form',\n  templateUrl: './checkout-form.component.html',\n  styleUrls: ['./checkout-form.component.scss'],\n  standalone: true,\n  imports: [CommonModule, AddressAutocompleteComponent, ReactiveFormsModule],\n})\nexport class CheckoutFormComponent {\n  checkoutForm = this.formBuilder.group({\n    firstname: [''],\n    lastname: [''],\n    email: [''],\n    address: this.formBuilder.group({\n      street: [''],\n      street_number: [''],\n      city: [''],\n      state: [''],\n      zip: [''],\n      country: [''],\n    }),\n  });\n\n  constructor(private formBuilder: FormBuilder) {}\n\n  handleAddressChange(event: MappedAddress) {\n    console.log(event);\n    this.checkoutForm.patchValue({\n      address: {\n        street: event['route'],\n        street_number: event['street_number'],\n        city: event['locality'],\n        state: event['administrative_area_level_1'],\n        zip: event['postal_code'],\n        country: event['country'],\n      },\n    });\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host {\n  max-width: 500px;\n\n  display: flex;\n  flex-direction: column;\n}\n\nlabel {\n  font-size: 15px;\n  padding: 5px;\n}\n\ninput {\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  padding: 10px;\n}\n\ninput {\n  width: 100%;\n\n  font-size: 15px;\n\n  border-radius: 5px;\n  border: 1px solid #ccc;\n  padding: 12px 15px;\n}\n\ninput:focus {\n  outline: none;\n  border-color: rgb(0 140 255);\n  box-shadow: 0 0 7px rgb(0 140 255 / 50%);\n}\n\nlego-address-autocomplete {\n  border-bottom: 1px solid #ccc;\n  margin: 25px 0;\n  padding-bottom: 25px;\n}\n\n.address {\n  width: 500px;\n\n  margin: 10px 0;\n  gap: 5px 0;\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: repeat(12, 1fr);\n  gap: 10px;\n}\n\n.column {\n  display: flex;\n  flex-direction: column;\n}\n\n.col-1 {\n  grid-column: span 1;\n}\n\n.col-2 {\n  grid-column: span 2;\n}\n\n.col-3 {\n  grid-column: span 3;\n}\n\n.col-4 {\n  grid-column: span 4;\n}\n\n.col-5 {\n  grid-column: span 5;\n}\n\n.col-6 {\n  grid-column: span 6;\n}\n\n.col-7 {\n  grid-column: span 7;\n}\n\n.col-8 {\n  grid-column: span 8;\n}\n\n.col-9 {\n  grid-column: span 9;\n}\n\n.col-10 {\n  grid-column: span 10;\n}\n\n.col-11 {\n  grid-column: span 11;\n}\n\n.col-12 {\n  grid-column: span 12;\n}\n",
+                    "styleUrl": "./checkout-form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "formBuilder",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 29,
+                "jsdoctags": [
+                    {
+                        "name": "formBuilder",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<form [formGroup]=\"checkoutForm\">\n  <div class=\"grid\">\n    <div class=\"column col-12\">\n      <label for=\"firstname\">First name</label>\n      <input\n        type=\"text\"\n        id=\"firstname\"\n        formControlName=\"firstname\"\n        placeholder=\"Jack\"\n      />\n    </div>\n\n    <div class=\"column col-12\">\n      <label for=\"lastname\">Last name</label>\n      <input\n        type=\"text\"\n        id=\"lastname\"\n        formControlName=\"lastname\"\n        placeholder=\"Doe\"\n      />\n    </div>\n  </div>\n\n  <lego-address-autocomplete\n    [label]=\"'Address'\"\n    [placeholder]=\"'Enter your address here for autocomplete'\"\n    (setAddress)=\"handleAddressChange($event)\"\n  ></lego-address-autocomplete>\n  <div [formGroupName]=\"'address'\" class=\"grid address\">\n    <div class=\"column col-9\">\n      <label for=\"street\">Street</label>\n      <input\n        type=\"text\"\n        id=\"street\"\n        formControlName=\"street\"\n        placeholder=\"Street\"\n      />\n    </div>\n\n    <div class=\"column col-3\">\n      <label for=\"street_number\">House no.</label>\n      <input\n        type=\"text\"\n        formControlName=\"street_number\"\n        placeholder=\"House no.\"\n        id=\"street_number\"\n      />\n    </div>\n\n    <div class=\"column col-3\">\n      <label for=\"zip\">Zip</label>\n      <input type=\"text\" formControlName=\"zip\" placeholder=\"Zip\" id=\"zip\" />\n    </div>\n\n    <div class=\"column col-9\">\n      <label for=\"city\">City</label>\n      <input type=\"text\" formControlName=\"city\" placeholder=\"City\" id=\"city\" />\n    </div>\n\n    <div class=\"column col-12\">\n      <label for=\"state\">State</label>\n      <input\n        type=\"text\"\n        formControlName=\"state\"\n        placeholder=\"State\"\n        id=\"state\"\n      />\n    </div>\n\n    <div class=\"column col-12\">\n      <label for=\"country\">Country</label>\n      <input\n        type=\"text\"\n        formControlName=\"country\"\n        placeholder=\"Country\"\n        id=\"country\"\n      />\n    </div>\n  </div>\n</form>\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-3d494fd89671305c6be07de00e019efdf08f2e36c2169e5fb75a5acdb2841da927e3ef3cbd21cc18f478373a784b1fb90e8b63b9df4b3498a75b652bd9c37b38",
+            "file": "projects/lego/src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 74,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 71,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport type { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 700;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "LegacyComponent",
+            "id": "component-LegacyComponent-1e18530030b003fbc35f2fdb915aee89e930ddb923bd17f5c03b9357f3eed92e243e282b841f0dee296f71ebfe8e9384d6b72b5731c27b2e9fbbe1650ca75d81",
+            "file": "projects/lego/src/lib/legacy/legacy.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lego-legacy",
+            "styleUrls": [
+                "./legacy.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./legacy.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { AclService } from '../acl.service';\nimport { AuthService } from '../auth.service';\nimport { DataAccessService } from '../data-access.service';\n\n@Component({\n  selector: 'lego-legacy',\n  templateUrl: './legacy.component.html',\n  styleUrls: ['./legacy.component.css'],\n})\nexport class LegacyComponent {\n  constructor(\n    private aclService: AclService,\n    private authService: AuthService,\n    private dataAccessService: DataAccessService\n  ) {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./legacy.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "aclService",
+                        "type": "AclService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "authService",
+                        "type": "AuthService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "dataAccessService",
+                        "type": "DataAccessService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "aclService",
+                        "type": "AclService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "authService",
+                        "type": "AuthService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "dataAccessService",
+                        "type": "DataAccessService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<p>legacy works!</p>\n"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-badb6d8cee577661da79ba82ad8f599604afd40fa34e36c7b88d71d77a4fbc7184228cba2f0d73e255d0b7bc51c4c7a8e7b0128b3624aeb0255abab9030fa59a",
+            "file": "projects/lego/src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section class=\"storybook-page\">\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport type { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section class=\"storybook-page\">\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        }
+    ],
+    "modules": [
+        {
+            "name": "CoreModule",
+            "id": "module-CoreModule-7a4eae6f778ee698f9a965c613b7d68f354afb8fdd7ba636d15459187269af5daf0ade6459347621ff9243c2684e82fdbc085548009d76c45b5a218593ebaa8f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/lego/src/lib/core.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { LegacyComponent } from './legacy/legacy.component';\n\n@NgModule({\n  declarations: [LegacyComponent],\n  imports: [],\n  exports: [LegacyComponent],\n})\nexport class CoreModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "LegacyComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "LegacyComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "LegoModule",
+            "id": "module-LegoModule-3b48446208cee113477d4837bfae28552d275fa59e8d2f959bda91d0c588024b80d951ff6cc045a9b790a8e894267e7682aaf936ee15fc2f42a5e646a0b47c3f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/lego/src/lib/lego.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { AutocompleteComponent } from './autocomplete/autocomplete.component';\nimport { AddressAutocompleteComponent } from './address-autocomplete/address-autocomplete.component';\nimport { CheckoutFormComponent } from './checkout-form/checkout-form.component';\n\n@NgModule({\n  imports: [\n    AddressAutocompleteComponent,\n    AutocompleteComponent,\n    CheckoutFormComponent,\n  ],\n  exports: [\n    AddressAutocompleteComponent,\n    AutocompleteComponent,\n    CheckoutFormComponent,\n  ],\n})\nexport class LegoModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AddressAutocompleteComponent"
+                        },
+                        {
+                            "name": "AutocompleteComponent"
+                        },
+                        {
+                            "name": "CheckoutFormComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "AddressAutocompleteComponent"
+                        },
+                        {
+                            "name": "AutocompleteComponent"
+                        },
+                        {
+                            "name": "CheckoutFormComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryObj<AddressAutocompleteComponent>",
+                "defaultValue": "{\n  args: {\n    label: 'Address',\n    placeholder: 'Enter your address',\n    adressTypes: [AddressType.ADDRESS],\n  },\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryObj<AutocompleteComponent>",
+                "defaultValue": "{\n  args: {\n    label: 'Autocomplete',\n    placeholder: 'Enter favorite food',\n    options,\n  },\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<Button>",
+                "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  tags: ['autodocs'],\n  render: (args: Button) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<Header>",
+                "defaultValue": "{\n  title: 'Example/Header',\n  component: Header,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/angular/writing-docs/autodocs\n  tags: ['autodocs'],\n  render: (args) => ({ props: args }),\n  decorators: [\n    moduleMetadata({\n      declarations: [Button],\n      imports: [CommonModule],\n    }),\n  ],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<Page>",
+                "defaultValue": "{\n  title: 'Example/Page',\n  component: Page,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [Button, Header],\n      imports: [CommonModule],\n    }),\n  ],\n}"
+            },
+            {
+                "name": "MOCK_ADDRESS_COMPONENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\n  {\n    long_name: 'Anacortes Ferry Terminal',\n    short_name: 'Anacortes Ferry Terminal',\n    types: ['route'],\n  },\n  {\n    long_name: 'Anacortes',\n    short_name: 'Anacortes',\n    types: ['locality', 'political'],\n  },\n  {\n    long_name: 'Skagit County',\n    short_name: 'Skagit County',\n    types: ['administrative_area_level_2', 'political'],\n  },\n  {\n    long_name: 'Washington',\n    short_name: 'WA',\n    types: ['administrative_area_level_1', 'political'],\n  },\n  {\n    long_name: 'United States',\n    short_name: 'US',\n    types: ['country', 'political'],\n  },\n  { long_name: '98221', short_name: '98221', types: ['postal_code'] },\n]"
+            },
+            {
+                "name": "MOCK_CLEAR_ADDRESS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "`Anacortes Ferry Terminal, 98221 Anacortes, United States`"
+            },
+            {
+                "name": "MOCK_MAPPED_ADDRESS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  route: 'Anacortes Ferry Terminal',\n  locality: 'Anacortes',\n  administrative_area_level_2: 'Skagit County',\n  administrative_area_level_1: 'Washington',\n  country: 'United States',\n  postal_code: '98221',\n}"
+            },
+            {
+                "name": "options",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "['Steak sandwhich', 'BBQ ribs', 'Hamburger', 'French fries']"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/.storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/checkout-form/checkout-form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  args: {},\n}"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "WithAddress",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryObj<AddressAutocompleteComponent>",
+                "defaultValue": "{\n  args: {\n    ...Default.args,\n  },\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const input = await canvas.findByLabelText('Address');\n    await userEvent.type(input, `${MOCK_CLEAR_ADDRESS} {enter}`, { delay: 50 });\n    await userEvent.click(input);\n\n    const result = await screen.findAllByText('Anacortes Ferry Terminal');\n\n    await userEvent.click(result[0]);\n  },\n}"
+            },
+            {
+                "name": "WithAutomatedTest",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryObj<AutocompleteComponent>",
+                "defaultValue": "{\n  args: {\n    ...Default.args,\n  },\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const input = await canvas.findByRole('combobox');\n    await userEvent.click(input);\n    await userEvent.type(input, `Steak sandw {enter}`, { delay: 50 });\n\n    const result = await screen.findByText('Steak sandwhich');\n\n    await userEvent.click(result);\n  },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "MappedAddress",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<Button>",
+                "file": "projects/lego/src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<Header>",
+                "file": "projects/lego/src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<Page>",
+                "file": "projects/lego/src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            }
+        ],
+        "enumerations": [
+            {
+                "name": "AddressType",
+                "childs": [
+                    {
+                        "name": "ESTABLISHMENT",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "establishment"
+                    },
+                    {
+                        "name": "ADDRESS",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "address"
+                    },
+                    {
+                        "name": "GEOCODE",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": "geocode"
+                    }
+                ],
+                "ctype": "miscellaneous",
+                "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts"
+            }
+        ],
+        "groupedVariables": {
+            "projects/lego/src/lib/address-autocomplete/address-autocomplete.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryObj<AddressAutocompleteComponent>",
+                    "defaultValue": "{\n  args: {\n    label: 'Address',\n    placeholder: 'Enter your address',\n    adressTypes: [AddressType.ADDRESS],\n  },\n}"
+                },
+                {
+                    "name": "WithAddress",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryObj<AddressAutocompleteComponent>",
+                    "defaultValue": "{\n  args: {\n    ...Default.args,\n  },\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const input = await canvas.findByLabelText('Address');\n    await userEvent.type(input, `${MOCK_CLEAR_ADDRESS} {enter}`, { delay: 50 });\n    await userEvent.click(input);\n\n    const result = await screen.findAllByText('Anacortes Ferry Terminal');\n\n    await userEvent.click(result[0]);\n  },\n}"
+                }
+            ],
+            "projects/lego/src/lib/autocomplete/autocomplete.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryObj<AutocompleteComponent>",
+                    "defaultValue": "{\n  args: {\n    label: 'Autocomplete',\n    placeholder: 'Enter favorite food',\n    options,\n  },\n}"
+                },
+                {
+                    "name": "options",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "['Steak sandwhich', 'BBQ ribs', 'Hamburger', 'French fries']"
+                },
+                {
+                    "name": "WithAutomatedTest",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryObj<AutocompleteComponent>",
+                    "defaultValue": "{\n  args: {\n    ...Default.args,\n  },\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const input = await canvas.findByRole('combobox');\n    await userEvent.click(input);\n    await userEvent.type(input, `Steak sandw {enter}`, { delay: 50 });\n\n    const result = await screen.findByText('Steak sandwhich');\n\n    await userEvent.click(result);\n  },\n}"
+                }
+            ],
+            "projects/lego/src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<Button>",
+                    "defaultValue": "{\n  title: 'Example/Button',\n  component: Button,\n  tags: ['autodocs'],\n  render: (args: Button) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+                }
+            ],
+            "projects/lego/src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<Header>",
+                    "defaultValue": "{\n  title: 'Example/Header',\n  component: Header,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/angular/writing-docs/autodocs\n  tags: ['autodocs'],\n  render: (args) => ({ props: args }),\n  decorators: [\n    moduleMetadata({\n      declarations: [Button],\n      imports: [CommonModule],\n    }),\n  ],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                }
+            ],
+            "projects/lego/src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = await canvas.getByRole('button', {\n      name: /Log in/i,\n    });\n    await userEvent.click(loginButton);\n  },\n}"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: (args: Page) => ({\n    props: args,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<Page>",
+                    "defaultValue": "{\n  title: 'Example/Page',\n  component: Page,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [Button, Header],\n      imports: [CommonModule],\n    }),\n  ],\n}"
+                }
+            ],
+            "projects/lego/src/lib/address-autocomplete/address.mocks.ts": [
+                {
+                    "name": "MOCK_ADDRESS_COMPONENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n  {\n    long_name: 'Anacortes Ferry Terminal',\n    short_name: 'Anacortes Ferry Terminal',\n    types: ['route'],\n  },\n  {\n    long_name: 'Anacortes',\n    short_name: 'Anacortes',\n    types: ['locality', 'political'],\n  },\n  {\n    long_name: 'Skagit County',\n    short_name: 'Skagit County',\n    types: ['administrative_area_level_2', 'political'],\n  },\n  {\n    long_name: 'Washington',\n    short_name: 'WA',\n    types: ['administrative_area_level_1', 'political'],\n  },\n  {\n    long_name: 'United States',\n    short_name: 'US',\n    types: ['country', 'political'],\n  },\n  { long_name: '98221', short_name: '98221', types: ['postal_code'] },\n]"
+                },
+                {
+                    "name": "MOCK_CLEAR_ADDRESS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "`Anacortes Ferry Terminal, 98221 Anacortes, United States`"
+                },
+                {
+                    "name": "MOCK_MAPPED_ADDRESS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  route: 'Anacortes Ferry Terminal',\n  locality: 'Anacortes',\n  administrative_area_level_2: 'Skagit County',\n  administrative_area_level_1: 'Washington',\n  country: 'United States',\n  postal_code: '98221',\n}"
+                }
+            ],
+            "projects/lego/.storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/.storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+                }
+            ],
+            "projects/lego/src/lib/checkout-form/checkout-form.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/lego/src/lib/checkout-form/checkout-form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  args: {},\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {
+            "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts": [
+                {
+                    "name": "AddressType",
+                    "childs": [
+                        {
+                            "name": "ESTABLISHMENT",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "establishment"
+                        },
+                        {
+                            "name": "ADDRESS",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "address"
+                        },
+                        {
+                            "name": "GEOCODE",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": "geocode"
+                        }
+                    ],
+                    "ctype": "miscellaneous",
+                    "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts"
+                }
+            ]
+        },
+        "groupedTypeAliases": {
+            "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts": [
+                {
+                    "name": "MappedAddress",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/lego/src/stories/Button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<Button>",
+                    "file": "projects/lego/src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ],
+            "projects/lego/src/stories/Header.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<Header>",
+                    "file": "projects/lego/src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ],
+            "projects/lego/src/stories/Page.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<Page>",
+                    "file": "projects/lego/src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/lego/.storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/acl.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AclService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/address-autocomplete/address-autocomplete.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AddressAutocompleteComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/address-autocomplete/address-autocomplete.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/address-autocomplete/address-autocomplete.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithAddress",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MOCK_ADDRESS_COMPONENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MOCK_CLEAR_ADDRESS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/address-autocomplete/address.mocks.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MOCK_MAPPED_ADDRESS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/auth.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "AuthService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/autocomplete/autocomplete.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AutocompleteComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "options",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/autocomplete/autocomplete.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithAutomatedTest",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/checkout-form/checkout-form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CheckoutFormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/checkout-form/checkout-form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/data-access.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "DataAccessService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/lib/legacy/legacy.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LegacyComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "projects/lego/src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/lego/src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            }
+        ]
+    }
+}

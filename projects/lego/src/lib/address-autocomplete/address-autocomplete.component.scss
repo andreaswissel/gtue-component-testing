@@ -1,0 +1,12 @@
+@use "../../styles/input";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+}
+
+label {
+  font-size: 15px;
+  padding: 5px;
+}

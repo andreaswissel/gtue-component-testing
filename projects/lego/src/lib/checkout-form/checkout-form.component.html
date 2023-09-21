@@ -1,0 +1,80 @@
+<form [formGroup]="checkoutForm">
+  <div class="grid">
+    <div class="column col-12">
+      <label for="firstname">First name</label>
+      <input
+        type="text"
+        id="firstname"
+        formControlName="firstname"
+        placeholder="Jack"
+      />
+    </div>
+
+    <div class="column col-12">
+      <label for="lastname">Last name</label>
+      <input
+        type="text"
+        id="lastname"
+        formControlName="lastname"
+        placeholder="Doe"
+      />
+    </div>
+  </div>
+
+  <lego-address-autocomplete
+    [label]="'Address'"
+    [placeholder]="'Enter your address here for autocomplete'"
+    (setAddress)="handleAddressChange($event)"
+  ></lego-address-autocomplete>
+  <div [formGroupName]="'address'" class="grid address">
+    <div class="column col-9">
+      <label for="street">Street</label>
+      <input
+        type="text"
+        id="street"
+        formControlName="street"
+        placeholder="Street"
+      />
+    </div>
+
+    <div class="column col-3">
+      <label for="street_number">House no.</label>
+      <input
+        type="text"
+        formControlName="street_number"
+        placeholder="House no."
+        id="street_number"
+      />
+    </div>
+
+    <div class="column col-3">
+      <label for="zip">Zip</label>
+      <input type="text" formControlName="zip" placeholder="Zip" id="zip" />
+    </div>
+
+    <div class="column col-9">
+      <label for="city">City</label>
+      <input type="text" formControlName="city" placeholder="City" id="city" />
+    </div>
+
+    <div class="column col-12">
+      <label for="state">State</label>
+      <input
+        type="text"
+        formControlName="state"
+        placeholder="State"
+        id="state"
+      />
+    </div>
+
+    <div class="column col-12">
+      <label for="country">Country</label>
+      <input
+        type="text"
+        formControlName="country"
+        placeholder="Country"
+        id="country"
+      />
+    </div>
+  </div>
+</form>
