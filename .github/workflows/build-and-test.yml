@@ -33,7 +33,7 @@ jobs:
         uses: Nambers/ReplaceStringInFile@v1.3
         with:
           path: ${{ github.workspace }}/cypress/support/component-index.html
-          oldString: \{INSERT_YOUR_KEY_HERE\}
+          oldString: "{INSERT_YOUR_KEY_HERE}"
           newString: AIzaSyBo-EafINdC4mSfyl23e6dNaD1k7XqqnvY
           showFileContent: true
 
