@@ -7,35 +7,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Build library and app
-      run: npm run build
+      - name: Build library and app
+        run: npm run build
 
-    - name: Build Storybook
-      run: npm run build-storybook
+      - name: Build Storybook
+        run: npm run build-storybook
 
-    - name: Run Component Tests
-      uses: cypress-io/github-action@v6
-      with:
-        working-directory: .
-        component: true
+      - name: Insert Google API Key into Cypress
+        uses: Nambers/ReplaceStringInFile@v1
+        with:
+          path: ${{ github.workspace }}/cypress/support/component-index.html
+          oldString: \{INSERT_YOUR_KEY_HERE\}
+          newString: AIzaSyBo-EafINdC4mSfyl23e6dNaD1k7XqqnvY
+          showFileContent: true
 
-    - name: Run E2E Tests
-      uses: cypress-io/github-action@v6
-      with:
-        working-directory: cypress/e2e/*
+      - name: Run Component Tests
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: .
+          component: true
+
+      - name: Run E2E Tests
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: cypress/e2e/*
