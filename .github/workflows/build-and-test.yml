@@ -30,7 +30,7 @@ jobs:
         run: npm run build-storybook
 
       - name: Insert Google API Key into Cypress
-        uses: Nambers/ReplaceStringInFile@v1
+        uses: Nambers/ReplaceStringInFile@v1.3
         with:
           path: ${{ github.workspace }}/cypress/support/component-index.html
           oldString: \{INSERT_YOUR_KEY_HERE\}
